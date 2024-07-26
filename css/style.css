@@ -31,13 +31,10 @@ li{
 .navbar{
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 100px;
     align-items: center;
 }
-.navbar__logo{
-    color: #000;
-    font-size: 40px;
-}
+
     .navbar__box{
         display: flex;
         align-items: center;
