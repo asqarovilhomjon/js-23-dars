@@ -92,7 +92,7 @@ li{
     padding: 15px;
     border-radius: 15px;
     width: 100%;
-    color: #ddd;
+    color: #0007;
     outline: none;
     &:hover{
         border: 1px solid #0006;
@@ -101,10 +101,10 @@ li{
 .form__input-password{
     height: 50px;
     width: 100%;
-    border: 1px solid rgb(226, 223, 223);
+    border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
-    color:black;
+    color: #0008;
     margin-bottom: 20px;
     outline: none;
     &:hover{
@@ -115,11 +115,18 @@ li{
     width: 80%;
     height: 48px;
     border-radius: 5px;
+    font-size: 18px;
     background:blue;
     color:#fff;
     border: none;
-    transition: .25s;
-    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    &:hover{
+        transform: scale(.95);
+    }
+    &:active{
+        background: rgb(13, 13, 149);
+    }
 }
 .forgot{
     height: 50px;
@@ -134,30 +141,44 @@ li{
     width: 80%;
     height: 49px;
     border-radius: 5px;
-    background:rgb(228, 210, 135);
-    color:rgb(72, 72, 72);
-    border: none;
-    transition: .25s;
     font-size: 18px;
+    background:green;
+    color:#fff;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+    &:hover{
+        transform: scale(.95);
+    }
+    &:active{
+        background: rgb(2, 81, 2);
+    }
 }
 hr{
     width: 100%;
     margin-bottom: 20px;
 }
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 550px;
+}
 .admin{
-    margin-top: 200px;
+    margin: auto;
     display: flex;
     align-items: center;
 }
 .card{
-    width: 350px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
-    box-shadow: 0 0 20px 0 gainsboro;
+    box-shadow: 0 0 10px 0 #0009;
     background: transparent;
 }
 .info{
@@ -171,13 +192,21 @@ hr{
     margin-right: 30px;
 }
 .click{
+    margin-left: 100px;
     width: 200px;
-    height: 49px;
+    height: 48px;
     border-radius: 5px;
-    background:rgb(228, 210, 135);
-    color:rgb(72, 72, 72);
-    border: none;
-    transition: .25s;
     font-size: 18px;
+    background:blue;
+    color:#fff;
+    border: none;
+    cursor: pointer;
+    transition: .3s;
     margin-top: 40px;
+    &:hover{
+        transform: scale(.95);
+    }
+    &:active{
+        background: rgb(13, 13, 149);
+    }
 }
