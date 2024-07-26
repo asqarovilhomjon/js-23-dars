@@ -3,35 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/main.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login page</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <nav class="navbar"> 
-                <div class="navbar__logo">  
-                    <li class="navbar__item"><a href="../index.html"><span>Admin</span></a></li> 
+            <nav class="navbar">
+                <div class="navbar__logo">
+                       <h2>API</h2>
                 </div>
-                <ul class="navbar__collection">
-                    <li class="navbar__item"><a href="/pages/login.html"><span>Login</span></a></li>
-                </ul>
+                    <div class="navbar__box">
+                            <ul class="navbar__collection">
+                                <li class="navbar__item"><a href="../index.html">Home</a></li>
+                            </ul>
+                    </div>
+                </div>
             </nav>
         </div>
     </header>
-    <div class="container">
-    <div class="header__fecbook">
-        <form class="form" action="">
-            <input value="emilys" class="input-username" required placeholder="Email or phone number " type="text">
-            <input value="emilyspass" class="input-password" required placeholder="password" type="password">
-            <button class="btn">Log in</button>
-            <a class="activ" href="#">Forgot password?</a>
-            <hr class="hr">
-            <button onclick="toggleShow ()" class="button">Creat new account</button>
-        </form>
-    </div>
-  
-</div>
-   <script src="../js/login.js"></script> 
+    <main>
+        <section class="login">
+            <div class="container">
+                <div class="login__box">
+                    <form class="form" action="">
+                        <input value="emilys" class="form__input-username" required placeholder="Name.." type="text">
+                        <input value="emilyspass" class="form__input-password" required placeholder="Password" type="password">
+                        <button class="btn">Log in</button>
+                    </form>
+                    <button class="no__color">Forgot password?</button>
+                    <hr>
+                    <button class="new">Creat new account</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="../js/login.js"></script>
 </body>
 </html>
