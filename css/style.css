@@ -36,6 +36,7 @@ li{
 }
 .navbar__logo{
     color: #000;
+    font-size: 40px;
 }
     .navbar__box{
         display: flex;
@@ -47,57 +48,33 @@ li{
         gap: 30px;
     }
     .navbar__item{
-        color:rgb(72, 72, 72);
+        color:#fff;
         font-weight: 600;
         transition: .3s;
-        font-size: 20px;
+        font-size: 30px;
     }
     .navbar__item:hover{
-        color:wheat;
+        color:#ddd;
+        transform: scale(.9);
     }
-    .search{
-        display: flex;
-        gap: 20px;
-        align-items: center;
-    }
-    .navbar__input{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        height: 40px;
-        width: 222px;
-        border-radius: 35px;
-        background: white;
-    }
-    input{
-        outline: none;
-        border: none;
-        border-radius: 35px;
-        color: blueviolet;
-    }
-    i{
-        color: rgb(47, 47, 47);
-        padding-left: 20px;
-        transition: .4s;
-    }
-    i:hover{
-        color:wheat;
-    }
-.login{
+    
+    
+.login__parent{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 600px;
+}
+.login{
+    margin: auto;
 }
 .login__box{
-    margin-top: 200px;
+    margin-top: 150px;
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    box-shadow: 0 0 20px 0 gainsboro;
+    width: 400px;
+    box-shadow: 0 0 10px #0009;
     border-radius: 20px;
 }
 .form{
@@ -107,14 +84,19 @@ li{
     flex-direction: column;
     width: 100%;
     gap: 20px;
+    outline: none;
 }
 .form__input-username{
-    height: 50px;
-    border: 1px solid rgb(226, 223, 223);
-    padding: 10px;
-    border-radius: 10px;
+    height: 60px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 15px;
     width: 100%;
-    color:black;
+    color: #ddd;
+    outline: none;
+    &:hover{
+        border: 1px solid #0006;
+    }
 }
 .form__input-password{
     height: 50px;
@@ -124,22 +106,26 @@ li{
     border-radius: 10px;
     color:black;
     margin-bottom: 20px;
+    outline: none;
+    &:hover{
+        border: 1px solid #0006;
+    }
 }
 .btn{
     width: 80%;
     height: 48px;
     border-radius: 5px;
-    background:rgba(251, 227, 195, 0.779);
-    color:rgb(72, 72, 72);
+    background:blue;
+    color:#fff;
     border: none;
     transition: .25s;
     font-size: 18px;
 }
-.no__color{
+.forgot{
     height: 50px;
     border-radius: 5px;
     background:transparent;
-    color:rgb(72, 72, 72);
+    color:#0005;
     border: none;
     transition: .25s;
     font-size: 18px;
